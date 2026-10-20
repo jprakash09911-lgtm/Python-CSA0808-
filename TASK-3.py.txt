@@ -1,0 +1,16 @@
+TAX_RATE = 0.10
+MAX_LIMIT = 5000
+
+amount = float(input("Enter payment amount: "))
+
+tax = amount * TAX_RATE
+total = amount + tax
+
+print("Payment Amount:", amount)
+print("Tax Amount:", tax)
+print("Total Payment:", total)
+
+if total <= MAX_LIMIT:
+    print("Payment is within the limit")
+else:
+    print("Payment exceeds the limit")
